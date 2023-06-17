@@ -1,5 +1,6 @@
 # To-Do List GPT
 This is a full-stack to-do list application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+Snappy is chat application build with the power of MERN Stack. You can check it out [here](https://to-do-list-gpt.vercel.app/).
 
 ![home page](./images/home.png)
 
@@ -41,7 +42,9 @@ cd backend
 npm install
 ```
 
-4. Update the `.env` file using the template given by the `.env.example` file by inserting your own API keys.
+4. Update the `.env` file using the template given by the `.env.example` file by inserting your own API keys. 
+You will need to obtain an API key from OpenAI. More information can be found [here](https://platform.openai.com/docs/introduction). 
+You will also need to set up a MongoDB database and use the MongoDB URI to connect to the database. More information can be found [here](https://www.mongodb.com/docs/atlas/tutorial/connect-to-your-cluster/). 
 ```shell
 REACT_APP_PORT= YOUR PORT NUMBER GOES HERE
 REACT_APP_MONGO_URI= YOUR MONGO URI GOES HERE
@@ -52,5 +55,19 @@ REACT_APP_OPENAI_API_KEY = YOUR API KEY GOES HERE
 ```shell
 npm start
 ```
+### Client
+6. Open another terminal or command prompt and navigate to the client directory of the cloned app.
+```shell
+cd client
+```
+7. Install the client-side dependencies by running the following command:
+```shell
+npm install
+```
 
-Done! Now open localhost:3000 in your browser.
+8. Start the client-side of the app by running the following command:
+```shell
+npm start
+```
+
+Done! Now open localhost:3000 in your browser and the app should now be running.
