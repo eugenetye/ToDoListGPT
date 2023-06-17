@@ -11,7 +11,7 @@ function Todo() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT || 8000}/todos`);
+      const response = await axios.get('/todos');
       setTodos(response.data);
     } catch (err) {
       console.log(err.message);
@@ -25,7 +25,7 @@ function Todo() {
   const addTodo = async (e) => {
     e.preventDefault();
     if(input.length === 0) return null;
-    await axios.post(`http://localhost:${process.env.REACT_APP_PORT || 8000}/todos`, [{
+    await axios.post('/todos', [{
       ...todos, 
       text: input,
     }]);
