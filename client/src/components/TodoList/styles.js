@@ -41,7 +41,7 @@ font-weight: 550;
 
 export const Delete = styled(FiTrash2)`
 cursor: pointer;
-margin-left: 50px
+margin-left: 50px;
 `;
 
 export const Spinner = props => {
