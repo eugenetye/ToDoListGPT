@@ -1,6 +1,6 @@
 # To-Do List GPT
 This is a full-stack to-do list application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
-Snappy is chat application build with the power of MERN Stack. You can check it out [here](https://to-do-list-gpt.vercel.app/).
+You can check it out [here](https://to-do-list-gpt.vercel.app/).
 
 ![home page](./images/home.png)
 
