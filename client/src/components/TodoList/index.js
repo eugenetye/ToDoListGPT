@@ -7,7 +7,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 function TodoList({todos, fetchData}) {
     const deleteTodo = async (id) => {
         try{
-            const response = await axios.delete(`/todos/${id}`, {
+            const response = await axios.delete(`http://localhost:${process.env.PORT || 8000}/todos/${id}`, {
                 id
             });
             fetchData();
@@ -28,7 +28,7 @@ function TodoList({todos, fetchData}) {
 
     const generateQuery = async (text) => {
         setLoading(true);
-        const response = await fetch("http://localhost:8000/generate", {
+        const response = await fetch(`http://localhost:${process.env.PORT || 8000}/generate`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
