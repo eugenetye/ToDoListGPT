@@ -28,7 +28,7 @@ function TodoList({todos, fetchData}) {
 
     const generateQuery = async (text) => {
         setLoading(true);
-        const response = await fetch("http://localhost:8000/generate", {
+        const response = await fetch("https://to-do-list-gpt-backend.vercel.app/generate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
