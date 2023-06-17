@@ -4,3 +4,9 @@ This is a full-stack to-do list application built using the MERN (MongoDB, Expre
 ![home page](./images/home.png)
 
 ![generate page](./images/generate.png)
+
+## 🚀 Features
+- Create to-dos
+- Add to-dos
+- Delete to-dos
+- Allows user to generate action steps for each individual to-do's
