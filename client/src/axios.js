@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: `http://localhost:${process.env.REACT_APP_PORT || 8000}`,
+    baseURL: `https://to-do-list-gpt-backend.vercel.app/`,
 })
 
 export default instance;
