@@ -3,7 +3,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 dotenv.config();
 
-const openaiApiKey = process.env.OPENAI_API_KEY
+const openaiApiKey = process.env.REACT_APP_OPENAI_API_KEY
 
 if (!openaiApiKey) {
     console.error('OPENAI_API_KEY is not set')
@@ -11,7 +11,7 @@ if (!openaiApiKey) {
 }
 
 const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.REACT_APP_OPENAI_API_KEY,
 })
 
 const openai = new OpenAIApi(configuration)

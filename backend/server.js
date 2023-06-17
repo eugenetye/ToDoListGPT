@@ -15,9 +15,9 @@ const {
 // App Config
 const app = express();
 
-const port = process.env.PORT || 8000;
+const port = process.env.REACT_APP_PORT || 8000;
 
-const connectionURL = process.env.MONGO_URI
+const connectionURL = process.env.REACT_APP_MONGO_URI
 
 // Middlewares
 // convert to json
