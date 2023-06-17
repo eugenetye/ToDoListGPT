@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { ListContainer, Row, Text, Delete, Generate, Icons } from './styles';
+import { ListContainer, Row, Text, Delete, Generate, Icons, Spinner } from './styles';
 import axios from '../../axios';
 import Popup from './Popup';
-import ClipLoader from "react-spinners/ClipLoader";
 
 function TodoList({todos, fetchData}) {
     const deleteTodo = async (id) => {
@@ -55,14 +54,7 @@ function TodoList({todos, fetchData}) {
                     <Icons>
                         <Generate type = 'submit' onClick={() => {onSubmit(todo.text); setButtonPopup(true)}}>Generate Action Steps</Generate>
                         <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
-                            {loading ? (
-                                <ClipLoader
-                                color={"#36d7b7"}
-                                size={100}
-                                aria-label="Loading Spinner"
-                                data-testid="loader"
-                              />
-                            ) : (<p>{result}</p>)}
+                            {loading ? (<Spinner/>) : (<pre style = {{fontFamily: 'Courier', fontSize: '20px',}}>{result}</pre>)}
                             
                         </Popup>
                         <Delete onClick={() => deleteTodo(todo._id)}></Delete>

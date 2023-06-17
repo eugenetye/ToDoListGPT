@@ -12,9 +12,7 @@
 
 .popup-inner {
     position: relative;
-    padding: 32px;
-    width: 100%;
-    max-width: 700px;
+    width: 50%;
     background-color: white;
     border-radius: 15px;
     padding: 20px 30px;
@@ -26,6 +24,4 @@
     right: 16px;
 }
 
-.close-btn {
-    cursor: pointer;
-}
+
