@@ -46,7 +46,7 @@ function TodoList({todos, fetchData}) {
   return (
     <div>
         <ListContainer>
-            {/* render all todos in bullet points */}
+            {/* render all the todos in bullet points */}
 
             {todos?.map((todo) => (
                 <Row key = {todo._id}>
